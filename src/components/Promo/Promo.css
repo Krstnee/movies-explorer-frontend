@@ -54,7 +54,13 @@
     order: 2;
 }
 
-
+@media screen and (max-width:1045px) {
+    .promo__image{
+        max-width: 290px;
+        max-height: 284px;
+    }
+    
+}
 @media screen and (max-width: 1023px) and (min-width: 768px) {
     .promo__container {
         flex-direction: column;
@@ -119,4 +125,10 @@
         max-width: 260px;
         text-align: center;
     }
+}
+@media screen and (max-width:338px) {
+    .promo__container{
+        min-width: 300px;
+    }
+    
 }

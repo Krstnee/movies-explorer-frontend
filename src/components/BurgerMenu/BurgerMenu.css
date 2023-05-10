@@ -22,7 +22,7 @@
     opacity: 0.7;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 767px) {
     .burger-menu {
         display: none;
     }

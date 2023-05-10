@@ -75,11 +75,17 @@
         font-size: 10px;
     }
 }
-@media screen and (max-width: 351px){
+@media screen and (max-width: 375px){
     .header__container {
         
         min-width: 283px;
     }
+}
+@media screen and (max-width:338px) {
+    .header__container{
+        padding: 0;
+    }
+    
 }
     
 

@@ -59,15 +59,7 @@
     margin-left: 17px;
 }
 
-@media screen and (max-width: 1200px) {
-    .navigation__links {
-        display: none;
-    }
 
-    .navigation__profile {
-        display: none;
-    }
-}
 
 @media screen and (max-width: 767px) {
     .navigation__links {

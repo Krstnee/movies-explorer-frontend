@@ -73,6 +73,7 @@ margin-right: 18px;
 
 .movies-card__button_delete {
     background-image: url("../../images/delete_button.svg");
+    width: 21px;
 }
 
 .movies-card__image {

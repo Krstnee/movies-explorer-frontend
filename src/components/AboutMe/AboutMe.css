@@ -167,3 +167,12 @@
         padding: 0;
     }
 }
+@media screen and (max-width:338px) {
+    .about-me__image{
+        width: 269px;
+    }
+    .about-me__text{
+        min-width: 269px;
+    }
+    
+}

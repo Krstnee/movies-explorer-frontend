@@ -130,3 +130,9 @@
         padding: 21px 0;
     }
 }
+@media screen and (max-width:338px) {
+    .techs__description{
+        width: 269px;
+    }
+    
+}

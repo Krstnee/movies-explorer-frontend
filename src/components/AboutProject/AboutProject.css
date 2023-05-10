@@ -162,11 +162,20 @@
         padding-top: 10px;
     }
 }
-@media screen and (max-width:359px) {
+@media screen and (max-width:375px) {
     .about-project__container{
         padding: 0;
         margin: 70px auto;
+        min-width: 284px;
+    }
+    .about-project__list {
         max-width: 284px;
+    }
+    .about-project__container-frontend {
+        width: 180px;
+    }
+    .about-project__container-backend {
+        width: 100px;
     }
     
 }
