@@ -18,6 +18,8 @@
 
 Ссылка на frontend -  
 
+Ссылка на пул-реквест - https://github.com/Krstnee/movies-explorer-frontend/pull/2
+
 Ссылка на backend - api.movies.irinaosipova.nomoredomains.sbs
 
 Публичный IP-адрес сервера - 51.250.76.199
