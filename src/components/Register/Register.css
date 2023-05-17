@@ -31,7 +31,7 @@
     opacity: 0.7;
 }
 
-.register__button_signin {
+.register__button_signup {
     margin: 100px 0 16px;
     padding: 13px 0 15px;
     border-radius: 3px;
@@ -40,7 +40,7 @@
     width: 100%;
 }
 
-.register__button_signin:disabled {
+.register__button_signup:disabled {
     background-color: #f8f8f8;
     color: #c2c2c2;
 }

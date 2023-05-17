@@ -6,7 +6,6 @@ function MoviesCardList(props) {
   const pathName = window.location.pathname;
   const [displayedMovies, setDisplayedMovies] = useState(0);
   const [cardsPerRow, setCardsPerRow] = useState(0);
-
   const cardLikeButtonClassName = "movies-card__button movies-card__button_like";
   const cardDislikeButtonClassName = "movies-card__button movies-card__button_dislike";
   const cardDeleteButtonClassName = "movies-card__button movies-card__button_delete";
@@ -34,21 +33,21 @@ function MoviesCardList(props) {
 
   function changeDisplayedMovies() {
     setDisplayedMovies(displayedMovies + cardsPerRow);
-    }
+  }
 
-    function calcOfNumberOfDisplayedMovies() {
-      const windowWidth = window.innerWidth;
-      if (windowWidth > 1200) {
-        setCardsPerRow(3);
-        setDisplayedMovies(12);
-      } else if (windowWidth > 723) {
-        setCardsPerRow(2);
-        setDisplayedMovies(8);
-      } else {
-        setCardsPerRow(1);
-        setDisplayedMovies(5);
-      }
-      }
+  function calcOfNumberOfDisplayedMovies() {
+    const windowWidth = window.innerWidth;
+    if (windowWidth >= 1200) {
+      setCardsPerRow(3);
+      setDisplayedMovies(12);
+    } else if (windowWidth >= 723) {
+      setCardsPerRow(2);
+      setDisplayedMovies(8);
+    } else {
+      setCardsPerRow(1);
+      setDisplayedMovies(5);
+    }
+  }
 
   function handleLikeClick(isLiked, movie) {
     if (!isLiked) {
@@ -62,7 +61,7 @@ function MoviesCardList(props) {
   useEffect(() => {
     calcOfNumberOfDisplayedMovies();
     window.addEventListener("resize", calcOfNumberOfDisplayedMovies);
-    }, []);
+  }, []);
 
   return (
     <section className="movies-card-list">
@@ -79,7 +78,7 @@ function MoviesCardList(props) {
             {props.moviesFetched && props.movies.length === 0 && <h2 className="movies-card-list__message">Ничего не найдено</h2>}
             {props.searchFailed &&
               <h2 className="movies-card-list__message">
-                Во время запроса произошла ошибка. 
+                Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз
               </h2>}
             <ul className="movies-card-list__list">
               {props.movies.slice(0, displayedMovies).map((movie) => {

@@ -7,7 +7,7 @@
 .movies-card-list__list {
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(2, 233px);
+    grid-template-rows: repeat(1, 233px);
     row-gap: 58px;
     column-gap: 30px;
     margin: 0 0 26px;
@@ -42,7 +42,7 @@ border-radius: 6px;
     }
     .movies-card-list__list {
         grid-template-columns: repeat(2, 339px);
-        grid-template-rows: repeat(2, 233px);
+        grid-template-rows: repeat(1, 233px);
         row-gap: 45px;
     }
     .movies-card-list__button{
@@ -57,7 +57,7 @@ border-radius: 6px;
     }
     .movies-card-list__list {
         grid-template-columns: repeat(1, 300px);
-        grid-template-rows: repeat(2, 202px);
+        grid-template-rows: repeat(1, 202px);
         row-gap: 36px;
     }
     .movies-card-list__button{
