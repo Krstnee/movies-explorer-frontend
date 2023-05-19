@@ -18,6 +18,4 @@
 
 Ссылка на frontend -  
 
-Ссылка на backend - api.movies.irinaosipova.nomoredomains.sbs
-
 Публичный IP-адрес сервера - 51.250.76.199
